@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+:root{
+    --greenC: #5ca720;
+    --blackC: #161616;
+    --linhas-divisórias: #a5a1a1;
+    --background-do-footer: #f9f9f9;
+}
+nav{
+    padding: 1.5em;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+nav ul li{
+    padding-right: 0.5em;
+}
+nav ul li:nth-child(2){
+    margin-right: auto;
+}
+li ion-icon{
+    color: var(--greenC);
+    width: 1.2em;
+    height: 1.2em;
+}
+header img{
+    width: 100%;
+}
+#barra-de-produtos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid var(--linhas-divisórias);
+}
+#barra-de-produtos p:first-child{
+    font-weight: bold;
+}
+.realce{
+    color: var(--greenC);
+}
+#produtos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 6em;
+}
+.bloco-dos-produtos{
+    padding-top: 1em;
+    margin-bottom: 5em;
+}
+.bloco-dos-produtos p{
+    padding-top: 0.5em;
+}
+.bloco-dos-produtos img{
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    border-radius: 10px ;
+}
+footer{
+    background-color: var(--background-do-footer);
+}
+#newsLetter{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    border: 0.1px solid var(--linhas-divisórias);
+}
+#botões-adicionais a{
+    display: block;
+    color: var(--blackC);
+    padding-bottom: 0.3em;
+    font-weight: bold;
+}
+#formulário p{
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+#formulário input:first-child{
+    border: 0.5px solid var(--linhas-divisórias);
+    padding: 0.5em;
+}
+#formulário input:last-child{
+    padding: 0.5em;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--greenC);
+    color: #fff;
+    cursor: pointer;
+}
+#redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+#redes-sociais ion-icon:nth-child(2){
+    margin-right: auto;
+}
+#redes-sociais ion-icon{
+    width: 2em;
+    height: 2em;
+    color: var(--greenC);
+    padding-right: 0.5em;
+}
+#redes-sociais p{
+    font-size: 17px;
+}
+#redes-sociais p a{
+    color: var(--greenC);
+}
+
+@media(max-width: 500px){
+    #newsLetter{
+        padding: 2em 0.5em;
+    }
+    #formulário{
+        text-align: center;
+    }
+    #formulário input:last-child{
+        margin-top: 0.5em;
+    }
+    #produtos{
+        gap: 1em;
+    }
+}
